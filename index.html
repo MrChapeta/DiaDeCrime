@@ -21,7 +21,7 @@
             <p>Você escolheu Luizão. A que horas vocês agirão?</p>
             <button class="btn-proximo" data-proximo="4">23h</button>
             <button class="btn-proximo" data-proximo="5">00h</button>
-            <button class="btn-proximo" data-proximo="17">01h</button>
+            <button class="btn-proximo" data-proximo="17.2">01h</button>
         </div>
 
         <!-- Passo 2: Plano com Renan -->
@@ -29,7 +29,7 @@
             <p>Você escolheu Renan. A que horas vocês agirão?</p>
             <button class="btn-proximo" data-proximo="4">23h</button>
             <button class="btn-proximo" data-proximo="5">00h</button>
-            <button class="btn-proximo" data-proximo="17">01h</button>
+            <button class="btn-proximo" data-proximo="17.2">01h</button>
         </div>
 
         <!-- Passo 3: Plano sozinho -->
@@ -101,24 +101,25 @@
 
         <!-- Passo 13: Hackear o sistema -->
         <div class="passo" id="passo-13">
-            <p>Você hackeia o sistema com sucesso, abre o cofre e pega o dinheiro. Quem estará te esperando?</p>
-            <button class="btn-proximo" data-proximo="final">...</button>
+            <p>Você hackeia o sistema com sucesso, abre o cofre e pega o dinheiro. Seu companheiro estará te esperando na saída.</p>
+            <button class="btn-proximo" data-proximo="final">Vamos lá</button>
         </div>
 
         <!-- Passo 14: Final com Luizão -->
-        <div class="passo" id="passo-14">
+        <div class="passo" id="passo-final-luizao">
             <p>Luizão te espera em um carro preto. Vocês fogem e ficam ricos!</p>
-            <button class="btn-proximo" data-proximo="0">Tentar Novamente</button>
+            <p class="parabens">Parabéns! Você completou a história com sucesso!</p>
         </div>
 
+
         <!-- Passo 15: Final com Renan -->
-        <div class="passo" id="passo-15">
+        <div class="passo" id="passo-final-renan">
             <p>Renan te entrega para a polícia. Você é preso e nunca confie no Renan.</p>
             <button class="btn-proximo" data-proximo="0">Tentar Novamente</button>
         </div>
 
         <!-- Passo 16: Final sozinho -->
-        <div class="passo" id="passo-16">
+        <div class="passo" id="passo-final-ninguem">
             <p>Sem ninguém para te ajudar, você não consegue fugir a tempo. A polícia te pega e você é preso.</p>
             <button class="btn-proximo" data-proximo="0">Tentar Novamente</button>
         </div>
@@ -130,6 +131,13 @@
             <button class="btn-proximo" data-proximo="19">Gritar de longe</button>
         </div>
 
+        <!-- Passo 17.2: Escolha 01h com Luiz ou com Renan -->
+        <div class="passo" id="passo-17.2">
+            <p>Você chega no local e logo à frente avista um amigo de vocês tentando roubar o banco. O que fazer?</p>
+            <button class="btn-proximo" data-proximo="lr">Juntar-se a ele</button>
+            <button class="btn-proximo" data-proximo="19">Gritar de longe</button>
+        </div>
+
         <!-- Passo 18: Juntar-se a Luizão e Renan -->
         <div class="passo" id="passo-18">
             <p>Você se aproxima e os dois se assustam, mas logo percebem que é você. Renan pergunta se você tem algum plano.</p>
@@ -137,9 +145,16 @@
             <button class="btn-proximo" data-proximo="21">Invadir por cima</button>
         </div>
 
+        <!-- Passo 18.2: Juntar-se ao amigo -->
+        <div class="passo" id="passo-lr">
+            <p>Você se aproxima e ele se assusta, mas logo reconhece vocês. Renan pergunta se você tem algum plano.</p>
+            <button class="btn-proximo" data-proximo="20">Arrombar a entrada principal</button>
+            <button class="btn-proximo" data-proximo="21">Invadir por cima</button>
+        </div>
+
         <!-- Passo 19: Gritar de longe -->
         <div class="passo" id="passo-19">
-            <p>Uma viatura passa bem na hora e acha suspeito. O policial que te aborda pergunta o que era aquilo.</p>
+            <p>Uma viatura passa bem na hora, escuta a gritaria e acha suspeito. O policial que te aborda pergunta o que era aquilo.</p>
             <button class="btn-proximo" data-proximo="22">Sacar a arma</button>
             <button class="btn-proximo" data-proximo="23">Denunciar Luiz e Renan</button>
         </div>
