@@ -131,3 +131,11 @@ button.btn-proximo[data-proximo="0"] {
 button.btn-proximo[data-proximo="0"]:hover {
     background-color: #b71c1c;
 }
+
+.parabens {
+    font-size: 1.5em; /* Ajuste o tamanho da fonte conforme necessário */
+    color: gold; /* Ou outra cor que você preferir */
+    text-align: center; /* Centraliza o texto */
+    margin-top: 20px; /* Espaço acima do texto */
+}
+
