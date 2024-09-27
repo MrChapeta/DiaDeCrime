@@ -122,3 +122,12 @@ p, button {
         transform: translateY(0);
     }
 }
+
+/* Botão de Tentar Novamente */
+button.btn-proximo[data-proximo="0"] {
+    background-color: #1976d2;
+}
+
+button.btn-proximo[data-proximo="0"]:hover {
+    background-color: #1565c0;
+}
