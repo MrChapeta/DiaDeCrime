@@ -4,116 +4,128 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;600&display=swap" rel="stylesheet">
     <title>DiaDeCrime</title>
 </head>
 <body>
     <main>
         <!-- Passo 0: Introdução -->
         <div class="passo ativo" id="passo-0">
-            <p>Você é um criminoso procurado pela polícia, sem dinheiro e desesperado. Você decide que roubar um banco é sua única saída. Qual será o plano?</p>
-            <button class="btn-proximo" data-proximo="1">Levar Luizão</button>
-            <button class="btn-proximo" data-proximo="2">Levar Renan</button>
-            <button class="btn-proximo" data-proximo="3">Ir sozinho</button>
+            <p>Você é um procurado pela polícia e está ficando sem dinheiro. A única saída parece ser roubar um banco próximo. Quem você levará com você?</p>
+            <button class="btn-proximo" data-proximo="1">Luizão</button>
+            <button class="btn-proximo" data-proximo="2">Renan</button>
+            <button class="btn-proximo" data-proximo="3">Ninguém</button>
         </div>
 
-        <!-- Passo 1: Escolheu Luizão -->
+        <!-- Passo 1: Plano com Luizão -->
         <div class="passo" id="passo-1">
-            <p>Você escolhe Luizão como seu parceiro. Agora, que horas você fará o roubo?</p>
+            <p>Você escolheu Luizão. A que horas vocês agirão?</p>
             <button class="btn-proximo" data-proximo="4">23h</button>
             <button class="btn-proximo" data-proximo="5">00h</button>
-            <button class="btn-proximo" data-proximo="6">01h</button>
+            <button class="btn-proximo" data-proximo="5">01h</button>
         </div>
 
-        <!-- Passo 2: Escolheu Renan -->
+        <!-- Passo 2: Plano com Renan -->
         <div class="passo" id="passo-2">
-            <p>Você escolhe Renan como seu parceiro. Agora, que horas você fará o roubo?</p>
+            <p>Você escolheu Renan. A que horas vocês agirão?</p>
             <button class="btn-proximo" data-proximo="4">23h</button>
             <button class="btn-proximo" data-proximo="5">00h</button>
-            <button class="btn-proximo" data-proximo="6">01h</button>
+            <button class="btn-proximo" data-proximo="5">01h</button>
         </div>
 
-        <!-- Passo 3: Escolheu ir sozinho -->
+        <!-- Passo 3: Plano sozinho -->
         <div class="passo" id="passo-3">
-            <p>Você decidiu ir sozinho. Agora, que horas você fará o roubo?</p>
+            <p>Você decidiu agir sozinho. A que horas você irá?</p>
             <button class="btn-proximo" data-proximo="4">23h</button>
             <button class="btn-proximo" data-proximo="5">00h</button>
-            <button class="btn-proximo" data-proximo="6">01h</button>
+            <button class="btn-proximo" data-proximo="5">01h</button>
         </div>
 
-        <!-- Passo 4: 23h, encontro com policial -->
+        <!-- Passo 4: Escolha 23h -->
         <div class="passo" id="passo-4">
-            <p>Às 23h, você se aproxima do banco, mas um policial sai de uma loja de donuts e acha seu comportamento suspeito.</p>
-            <button class="btn-proximo" data-proximo="7">Atirar no policial</button>
-            <button class="btn-proximo" data-proximo="8">Ignorar o policial</button>
+            <p>Às 23h, um policial sai de uma loja de donuts ao lado do banco e nota seu comportamento suspeito. O que fazer?</p>
+            <button class="btn-proximo" data-proximo="6">Atirar no policial</button>
+            <button class="btn-proximo" data-proximo="7">Ignorar o policial</button>
         </div>
 
-        <!-- Passo 5: 00h, banco vazio -->
+        <!-- Passo 5: Escolha 00h ou 01h -->
         <div class="passo" id="passo-5">
-            <p>Você chega ao banco à meia-noite, o lugar está deserto. Como você pretende entrar?</p>
-            <button class="btn-proximo" data-proximo="9">Arrombar a entrada principal</button>
-            <button class="btn-proximo" data-proximo="10">Pelos encanamentos</button>
+            <p>Você chega ao banco, ele está vazio. Como você pretende entrar?</p>
+            <button class="btn-proximo" data-proximo="8">Arrombar a entrada principal</button>
+            <button class="btn-proximo" data-proximo="9">Entrar pelos encanamentos</button>
         </div>
 
-        <!-- Passo 6: 01h, escolha semelhante ao passo 5 -->
+        <!-- Passo 6: Atirar no policial -->
         <div class="passo" id="passo-6">
-            <p>Você chega ao banco à 01h da manhã. O lugar está deserto. Como você pretende entrar?</p>
-            <button class="btn-proximo" data-proximo="9">Arrombar a entrada principal</button>
-            <button class="btn-proximo" data-proximo="10">Pelos encanamentos</button>
+            <p>Você erra o tiro e o policial rapidamente te neutraliza com um tiro. Você morreu.</p>
+            <button class="btn-proximo" data-proximo="0">Tentar Novamente</button>
         </div>
 
-        <!-- Passo 7: Atirar no policial -->
+        <!-- Passo 7: Ignorar o policial -->
         <div class="passo" id="passo-7">
-            <p>Você erra o tiro e o policial te finaliza com um tiro na cabeça. Fim de jogo.</p>
+            <p>O policial te acha suspeito e começa a te questionar. O que você faz?</p>
+            <button class="btn-proximo" data-proximo="10">Sacar a arma</button>
+            <button class="btn-proximo" data-proximo="11">Tentar se explicar</button>
         </div>
 
-        <!-- Passo 8: Ignorar o policial -->
+        <!-- Passo 8: Arrombar a entrada -->
         <div class="passo" id="passo-8">
-            <p>O policial te acha suspeito e começa a te questionar. O que fazer?</p>
-            <button class="btn-proximo" data-proximo="11">Sacar a arma</button>
-            <button class="btn-proximo" data-proximo="12">Tentar se explicar</button>
+            <p>Você arromba a porta, mas o alarme dispara. A polícia chega rapidamente e você é preso.</p>
+            <button class="btn-proximo" data-proximo="0">Tentar Novamente</button>
         </div>
 
-        <!-- Passo 9: Arrombar a entrada -->
+        <!-- Passo 9: Entrar pelos encanamentos -->
         <div class="passo" id="passo-9">
-            <p>Você arromba a entrada, mas o alarme dispara e a polícia chega rapidamente. Você é preso. Fim de jogo.</p>
+            <p>Você entra pelos encanamentos e chega ao cofre. Como deseja abrir o cofre?</p>
+            <button class="btn-proximo" data-proximo="12">Usar dinamite</button>
+            <button class="btn-proximo" data-proximo="13">Hackear o sistema</button>
+            <button class="btn-proximo" data-proximo="12">Usar lança-chamas</button>
         </div>
 
-        <!-- Passo 10: Encanamento -->
+        <!-- Passo 10: Sacar a arma para o policial -->
         <div class="passo" id="passo-10">
-            <p>Você consegue entrar pelos encanamentos e está de frente ao cofre. Como deseja abrir o cofre?</p>
-            <button class="btn-proximo" data-proximo="13">Usar dinamite</button>
-            <button class="btn-proximo" data-proximo="14">Hackear o sistema</button>
-            <button class="btn-proximo" data-proximo="15">Usar lança-chamas</button>
+            <p>O policial se ajoelha, mas outro policial aparece e te mata com um tiro. Você morreu.</p>
+            <button class="btn-proximo" data-proximo="0">Tentar Novamente</button>
         </div>
 
-        <!-- Passo 11: Sacar a arma no policial -->
+        <!-- Passo 11: Tentar se explicar -->
         <div class="passo" id="passo-11">
-            <p>Você saca a arma, mas o amigo do policial te pega desprevenido e te mata. Fim de jogo.</p>
+            <p>O policial descobre sua ficha criminal e você é preso.</p>
+            <button class="btn-proximo" data-proximo="0">Tentar Novamente</button>
         </div>
 
-        <!-- Passo 12: Tentar se explicar -->
+        <!-- Passo 12: Usar dinamite ou lança-chamas -->
         <div class="passo" id="passo-12">
-            <p>Você tenta se explicar, mas o policial te reconhece como um criminoso procurado. Você é preso. Fim de jogo.</p>
+            <p>O alarme é acionado e a polícia chega. Você é preso.</p>
+            <button class="btn-proximo" data-proximo="0">Tentar Novamente</button>
         </div>
 
-        <!-- Passo 13: Usar dinamite -->
+        <!-- Passo 13: Hackear o sistema -->
         <div class="passo" id="passo-13">
-            <p>O uso da dinamite aciona o alarme e você é pego pela polícia. Fim de jogo.</p>
+            <p>Você hackeia o sistema com sucesso, abre o cofre e pega o dinheiro. Quem estará te esperando?</p>
+            <button class="btn-proximo" data-proximo="14">Luizão</button>
+            <button class="btn-proximo" data-proximo="15">Renan</button>
+            <button class="btn-proximo" data-proximo="16">Ninguém</button>
         </div>
 
-        <!-- Passo 14: Hackear -->
+        <!-- Passo 14: Final com Luizão -->
         <div class="passo" id="passo-14">
-            <p>Você hackeia o sistema, abre o cofre e foge com o dinheiro. Se escolheu Luizão, ele te espera e vocês escapam. Se escolheu Renan, ele te trai e você é preso. Se foi sozinho, você não consegue fugir a tempo e é pego. Fim de jogo.</p>
+            <p>Luizão te espera em um carro preto. Vocês fogem e ficam ricos!</p>
+            <button class="btn-proximo" data-proximo="0">Tentar Novamente</button>
         </div>
 
-        <!-- Passo 15: Usar lança-chamas -->
+        <!-- Passo 15: Final com Renan -->
         <div class="passo" id="passo-15">
-            <p>O lança-chamas falha, acionando o alarme. Você é preso. Fim de jogo.</p>
+            <p>Renan te entrega para a polícia. Você é preso e nunca confie no Renan.</p>
+            <button class="btn-proximo" data-proximo="0">Tentar Novamente</button>
+        </div>
+
+        <!-- Passo 16: Final sozinho -->
+        <div class="passo" id="passo-16">
+            <p>Sem ninguém para te ajudar, você não consegue fugir a tempo. A polícia te pega e você é preso.</p>
+            <button class="btn-proximo" data-proximo="0">Tentar Novamente</button>
         </div>
     </main>
+
     <script src="script.js"></script>
 </body>
 </html>
