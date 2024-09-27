@@ -125,9 +125,9 @@ p, button {
 
 /* Botão de Tentar Novamente */
 button.btn-proximo[data-proximo="0"] {
-    background-color: #1976d2;
+    background-color: #1565c0;
 }
 
 button.btn-proximo[data-proximo="0"]:hover {
-    background-color: #1565c0;
+    background-color: #1976d2;
 }
