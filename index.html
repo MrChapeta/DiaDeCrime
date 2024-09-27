@@ -11,9 +11,9 @@
         <!-- Passo 0: Introdução -->
         <div class="passo ativo" id="passo-0">
             <p>Você é um procurado pela polícia e está ficando sem dinheiro. A única saída parece ser roubar um banco próximo. Quem você levará com você?</p>
-            <button class="btn-proximo" data-proximo="1">Luizão</button>
-            <button class="btn-proximo" data-proximo="2">Renan</button>
-            <button class="btn-proximo" data-proximo="3">Ninguém</button>
+            <button class="btn-proximo" data-proximo="1" data-escolha="luizao">Luizão</button>
+            <button class="btn-proximo" data-proximo="2" data-escolha="renan">Renan</button>
+            <button class="btn-proximo" data-proximo="3" data-escolha="ninguem">Ninguém</button>
         </div>
 
         <!-- Passo 1: Plano com Luizão -->
@@ -101,30 +101,28 @@
 
         <!-- Passo 13: Hackear o sistema -->
         <div class="passo" id="passo-13">
-            <p>Você hackeia o sistema com sucesso, abre o cofre e pega o dinheiro. Quem estará te esperando?</p>
-            <button class="btn-proximo" data-proximo="14">Luizão</button>
-            <button class="btn-proximo" data-proximo="15">Renan</button>
-            <button class="btn-proximo" data-proximo="16">Ninguém</button>
+            <p>Você hackeia o sistema com sucesso, abre o cofre e pega o dinheiro. O que acontecerá a seguir depende de quem você escolheu no início.</p>
+            <button class="btn-proximo" data-proximo="final">Ver o que acontece</button>
         </div>
 
-        <!-- Passo 14: Final com Luizão -->
-        <div class="passo" id="passo-14">
+        <!-- Passos Finais baseados na escolha inicial -->
+        <div class="passo" id="passo-final-luizao">
             <p>Luizão te espera em um carro preto. Vocês fogem e ficam ricos!</p>
             <button class="btn-proximo" data-proximo="0">Tentar Novamente</button>
         </div>
 
-        <!-- Passo 15: Final com Renan -->
-        <div class="passo" id="passo-15">
+        <div class="passo" id="passo-final-renan">
             <p>Renan te entrega para a polícia. Você é preso e nunca confie no Renan.</p>
             <button class="btn-proximo" data-proximo="0">Tentar Novamente</button>
         </div>
 
-        <!-- Passo 16: Final sozinho -->
-        <div class="passo" id="passo-16">
+        <div class="passo" id="passo-final-ninguem">
             <p>Sem ninguém para te ajudar, você não consegue fugir a tempo. A polícia te pega e você é preso.</p>
             <button class="btn-proximo" data-proximo="0">Tentar Novamente</button>
         </div>
+    </main>
 
     <script src="script.js"></script>
 </body>
 </html>
+
