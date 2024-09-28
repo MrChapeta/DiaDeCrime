@@ -11,6 +11,7 @@
         <!-- Passo 0: Introdução -->
         <div class="passo ativo" id="passo-0">
             <p>Você é um procurado pela polícia e está ficando sem dinheiro. A única saída parece ser roubar um banco próximo. Quem você levará com você?</p>
+            <p>Atenção: Cada escolha influência o final que você terá, portanto escolha com sabedoria.</p>
             <button class="btn-proximo" data-proximo="1" data-escolha="luizao">Luizão</button>
             <button class="btn-proximo" data-proximo="2" data-escolha="renan">Renan</button>
             <button class="btn-proximo" data-proximo="3" data-escolha="ninguem">Ninguém</button>
@@ -204,9 +205,40 @@
 
         <!-- Passo 27: Chamar Luizão para ajudar -->
         <div class="passo" id="passo-27">
-            <p>Você decide chamar Luizão para ajudar, mas uma viatura passa e vê a cena. Os três são presos.</p>
+            <p>Você decide chamar Luizão para ajudar e ele incrívelmente sobe no banco, pula no buraco e coloca Renan nas costas. Mas, uma viatura se aproxima em seguida. O que você faz?</p>
+            <button class="btn-proximo" data-proximo="28">Alertar todos.</button>
+            <button class="btn-proximo" data-proximo="29">Pular no buraco.</button>
+        </div>
+
+         <div class="passo" id="passo-28">
+            <p>Você alerta seus companheiros e eles cautelosamente se escondem enquanto você deita e reza pra não ser visto. Felizmente, a viatura passa correndo e vocês estão com sorte.</p>
+            <button class="btn-proximo" data-proximo="29">Pular no buraco</button>
+            <button class="btn-proximo" data-proximo="30">Discutir o plano</button>
+        </div>
+
+         <div class="passo" id="passo-29">
+            <p>Você pula no buraco e acaba aciona os alarmes. A policia chega rapidamente e prende todos vocês!</p>
             <button class="btn-proximo" data-proximo="0">Tentar Novamente</button>
         </div>
+
+        
+         <div class="passo" id="passo-30">
+            <p>Vocês discutem e chegam à uma conclusão: Você irá hackear o sistema de segurança do banco enquanto Luizão e Renan vão até o cofre pegar a grana. O plano funciona e vocês estão prestes a fugir, porém, Renan está sendo um fardo. </p>
+            <button class="btn-proximo" data-proximo="0">Deixar Renan</button>
+            <button class="btn-proximo" data-proximo="0">Levar Renan</button>
+        </div>
+
+        <div class="passo" id="passo-31">
+            <p>Vocês decidiram levar Renan e fugiram com sucesso. Na fuga, Renan exigiu que estacionassem em um determinado lugar e a policia apareceu súbitamente. Nunca confie em Renan </p>
+            <button class="btn-proximo" data-proximo="0">Tentar Novamente</button>
+        </div>
+
+         <div class="passo" id="passo-31">
+            <p>Vocês deixaram Renan e fugiram com sucesso. Ele tentou chamar a polícia mas vocês foram mais rápidos. Nunca confie em Renan </p>
+            <p class="parabens">Parabéns! Você completou a história com sucesso!</p>
+            <button class="btn-proximo" data-proximo="0">Jogar Novamente</button>
+        </div>
+        
     </main>
     <script src="script.js"></script>
 </body>
