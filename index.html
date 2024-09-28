@@ -11,9 +11,9 @@
         <!-- Passo 0: Introdução -->
         <div class="passo ativo" id="passo-0">
             <p>Você é um procurado pela polícia e está ficando sem dinheiro. A única saída parece ser roubar um banco próximo. Quem você levará com você?</p>
-            <button class="btn-proximo" data-proximo="1">Luizão</button>
-            <button class="btn-proximo" data-proximo="2">Renan</button>
-            <button class="btn-proximo" data-proximo="3">Ninguém</button>
+            <button class="btn-proximo" data-proximo="1" data-escolha="luizao">Luizão</button>
+            <button class="btn-proximo" data-proximo="2" data-escolha="renan">Renan</button>
+            <button class="btn-proximo" data-proximo="3" data-escolha="ninguem">Ninguém</button>
         </div>
 
         <!-- Passo 1: Plano com Luizão -->
@@ -109,8 +109,8 @@
         <div class="passo" id="passo-final-luizao">
             <p>Luizão te espera em um carro preto. Vocês fogem e ficam ricos!</p>
             <p class="parabens">Parabéns! Você completou a história com sucesso!</p>
+            <button class="btn-proximo" data-proximo="0">Jogar Novamente</button>
         </div>
-
 
         <!-- Passo 15: Final com Renan -->
         <div class="passo" id="passo-final-renan">
@@ -138,79 +138,18 @@
             <button class="btn-proximo" data-proximo="19">Gritar de longe</button>
         </div>
 
-        <!-- Passo 18: Juntar-se a Luizão e Renan -->
+        <!-- Passo 18: Juntar-se a eles -->
         <div class="passo" id="passo-18">
-            <p>Você se aproxima e os dois se assustam, mas logo percebem que é você. Renan pergunta se você tem algum plano.</p>
-            <button class="btn-proximo" data-proximo="20">Arrombar a entrada principal</button>
-            <button class="btn-proximo" data-proximo="21">Invadir por cima</button>
-        </div>
-
-        <!-- Passo 18.2: Juntar-se ao amigo -->
-        <div class="passo" id="passo-lr">
-            <p>Você se aproxima e ele se assusta, mas logo reconhece vocês. Isso agora é um plano triplo: Você, Luizão e Renan. Renan pergunta se você tem algum plano.</p>
-            <button class="btn-proximo" data-proximo="20">Arrombar a entrada principal</button>
-            <button class="btn-proximo" data-proximo="21">Invadir por cima</button>
+            <p>Você junta-se a Luizão e Renan. O policial aparece e vocês são presos. Fim da história.</p>
+            <button class="btn-proximo" data-proximo="0">Tentar Novamente</button>
         </div>
 
         <!-- Passo 19: Gritar de longe -->
         <div class="passo" id="passo-19">
-            <p>Uma viatura passa bem na hora, escuta a gritaria e acha suspeito. O policial que te aborda pergunta o que era aquilo.</p>
-            <button class="btn-proximo" data-proximo="22">Sacar a arma</button>
-            <button class="btn-proximo" data-proximo="23">Denunciar Luiz e Renan</button>
-        </div>
-
-        <!-- Passo 20: Arrombar a entrada principal -->
-        <div class="passo" id="passo-20">
-            <p>Você arromba a entrada principal, mas isso aciona os alarmes e os três são pegos. Você é preso.</p>
-            <button class="btn-proximo" data-proximo="0">Tentar Novamente</button>
-        </div>
-
-        <!-- Passo 21: Invadir por cima -->
-        <div class="passo" id="passo-21">
-            <p>Você e Renan sobem nas costas de Luizão e chegam na parte de cima do banco.</p>
-            <p>Agora, o que você fará?</p>
-            <button class="btn-proximo" data-proximo="24">Entrar pelas instalações</button>
-            <button class="btn-proximo" data-proximo="25">Quebrar um buraco no chão</button>
-        </div>
-
-        <!-- Passo 22: Sacar a arma -->
-        <div class="passo" id="passo-22">
-            <p>Você saca a arma, faz o policial de refém, mas um companheiro dele age rapidamente e te neutraliza. Os três são presos.</p>
-            <button class="btn-proximo" data-proximo="0">Tentar Novamente</button>
-        </div>
-
-        <!-- Passo 23: Denunciar Luiz e Renan -->
-        <div class="passo" id="passo-23">
-            <p>O policial pede seus documentos e percebe que você está sendo procurado. Os três são presos por tentativa de roubo.</p>
-            <button class="btn-proximo" data-proximo="0">Tentar Novamente</button>
-        </div>
-
-        <!-- Passo 24: Entrar pelas instalações -->
-        <div class="passo" id="passo-24">
-            <p>Vocês tentam entrar pelas instalações, mas o sistema de segurança é mais complicado do que parece. Você acaba preso. Renan tenta ajudar, mas não consegue e Luizão, vendo tudo isso, também não consegue subir. No final, os três acabam presos.</p>
-            <button class="btn-proximo" data-proximo="0">Tentar Novamente</button>
-        </div>
-
-        <!-- Passo 25: Quebrar um buraco no chão -->
-        <div class="passo" id="passo-25">
-            <p>Você decide quebrar um buraco no chão. Durante o processo, Renan cai dentro do banco e fratura o joelho, acionando o alarme. O que você faz?</p>
-            <button class="btn-proximo" data-proximo="26">Pular para ajudar</button>
-            <button class="btn-proximo" data-proximo="27">Chamar Luizão para ajudar</button>
-        </div>
-
-        <!-- Passo 26: Pular para ajudar Renan -->
-        <div class="passo" id="passo-26">
-            <p>Você pula para ajudar Renan, mas acaba ativando o alarme e os três são pegos. Você é preso.</p>
-            <button class="btn-proximo" data-proximo="0">Tentar Novamente</button>
-        </div>
-
-        <!-- Passo 27: Chamar Luizão para ajudar -->
-        <div class="passo" id="passo-27">
-            <p>Você decide chamar Luizão para ajudar, mas uma viatura passa e vê a cena. Os três são presos.</p>
+            <p>O policial te escuta e vem atrás de você. Você é preso!</p>
             <button class="btn-proximo" data-proximo="0">Tentar Novamente</button>
         </div>
     </main>
-
     <script src="script.js"></script>
 </body>
 </html>
